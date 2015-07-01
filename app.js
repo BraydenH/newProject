@@ -1,14 +1,45 @@
-function var Choice1 = "computerChoice";
-var Choice1 = Math.floor() (Math.random()*3)
-if (Choice1 === 1)
-{
-	window.alert(Computer picked rock);
+var computerChoice = "";
+var userChoice = "";
+function computerThink(){
+	computerChoice = Math.floor(Math.random()*3);
+	if
+		(computerChoice === 1){
+			computerChoice = "Rock";
+
+	}   
+	else if
+		(computerChoice === 2){
+			computerChoice = "paper"; 
+	}        
+	else{
+		computerChoice = "scissors";
+	}
+	
 }
-if (Choice1 === 2)
-{
-	window.alert(Computer picked paper);
+
+function test3(){
+	userChoice = "Rock";
+	computerThink();
+	results();
 }
-if (Choice1 === 3)
-{
-	window.alert(Coputer picked paper);
+
+function test2(){
+	userChoice = "Paper";
+	computerThink();
+	results();
 }
+
+function test(){
+	alert("scissors");
+	userChoice = "scissors";
+	computerThink();
+	compare();
+}
+
+var compare = function(choice1, choice2) {
+	if(choice1 === choice2) {
+		return "The result is a tie";
+
+}
+
+else if(userChoice)
